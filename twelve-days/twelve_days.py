@@ -15,10 +15,10 @@ def recite(start_verse, end_verse):
         "two Turtle Doves, and ",
         "a Partridge in a Pear Tree.",
     ]
-    # declare empty list
+    # declare empty list, and fill with append method
     verse = []
     for i in range(start_verse, end_verse +1):
-        # i: index of aray
+        # i: index of array
         # : indicates a range
         verse.append("On the {} day of Christmas my true love gave to me: ".format(days[i])+ "".join(gifts[-i:]))
     return verse
